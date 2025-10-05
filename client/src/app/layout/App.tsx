@@ -4,7 +4,6 @@ import { Outlet } from "react-router-dom";
 import { useAppSelector } from "../store/store";
 
 
-
 function App() {
     const { darkMode } = useAppSelector(state => state.ui);
 
