@@ -8,7 +8,7 @@ export default function ProductDetails() {
     const [product, setProduct] = useState<Product | null>(null);
 
     useEffect(() => {
-        fetch(`https://localhost:5001/api/products/${id}`)
+        fetch(`http://localhost:5001/api/products/${id}`)
             .then(response => response.json())
             .then(data => setProduct(data))
             .catch(error => console.log(error))
